@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project 2 - API Testing</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <template id="list-template">
+      <li class="recipe-title">List Content Here</li>
+    </template>
+    <div>
+      <h2>Project 2 - API Testing List</h2>
+      <ul id="list-result">
+      </ul>
+      <p>Enter </p>
+      <input id="number-params" onchange="handleNumberParam()" type="number">
+    </div>
+  </body>
+  <script>
+    // const dummyData = [
+    //   {title: 'Heafy Leafy Salad'},
+    //   {title: 'Chicken Parmi'},
+    //   {title: 'Slow Roast Lamb'},
+    //   {title: 'Soup with Lentils Beans'},
+    //   {title: 'Surf and Turf'},
+    //   {title: 'Salmon and Prawns with Asparagrus'},
+    // ]
+
+    let num = 0;
+    let allRecipes;
+
+    function handleNumberParam() {
+      console.log(allRecipes);
+    }
+
+    fetch(`http://localhost:8080/yummy-foody-API/v1/recipes`)
+        .then((res) => res.json())
+        .then((res) => {
+            res.forEach(item => addRecipes(item.catergory));
+            allRecipes = res;
+        })
+
+    function addRecipes(recipeTitle) {
+        const templateOne =
+        document.getElementById("list-template").content.cloneNode(true);
+        
+        templateOne.querySelector('.recipe-title').innerText = recipeTitle;
+
+        document.querySelector('#list-result').appendChild(templateOne);
+        console.log('Successfully Added Content!');
+    }
+
+  </script>
+</html>
