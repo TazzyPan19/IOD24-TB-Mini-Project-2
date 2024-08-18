@@ -1,0 +1,96 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.1",
+    "title": "Zesty Recipes Application API",
+    "description": "Zesty Recipes Application API for Mini Project 2.",
+    "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "host": "localhost:8080",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "Zesty Recipes",
+      "description": "A database of food recipes by users and created by users."
+    }
+  ],
+  "schemes": ["http"],
+  "consumes": ["application/json"],
+  "produces": ["application/json"],
+  "paths": {
+    "/zestyrecipes/v1/recipes": {
+      "get": {
+        "tags": ["Retrieve Food Recipes Service"],
+        "summary": "Fetch food recipe from database",
+        "parameters": [
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Add a number to set limit"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response at retrieving this data"
+          }
+        }
+      }
+    },
+    "/zestyrecipes/v1/recipes/:id": {
+      "get": {
+        "tags": ["Retrieve Food Recipes Service"],
+        "summary": "Fetch food recipe by catergory from database",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "query",
+            "description": "Search Parameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response at retrieving this data"
+          },
+          "404": {
+            "description": "Unsuccessful response at retrieving this data"
+          }
+        }
+      }
+    },
+    "/zestyrecipes/v1/recipes-cat": {
+      "get": {
+        "tags": ["Retrieve Food Recipes Service"],
+        "summary": "Fetch food recipe by catergory from database",
+        "parameters": [
+          {
+            "name": "search",
+            "in": "query",
+            "description": "Search Parameter"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response to retrieving this data"
+          },
+          "404": {
+            "description": "Successful response to retrieving this data"
+          }
+        }
+      }
+    },
+    "/zestyrecipes/v1/recipe-post": {
+      "post": {
+        "tags": ["Retrieve Food Recipes Service"],
+        "summary": "Create a new food recipe.",
+        "responses": {
+          "201": {
+            "description": "Successful response to uploading this data"
+          }
+        }
+      }
+    }
+  }
+}

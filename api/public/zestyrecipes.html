@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project 2 - API Testing</title>
+    <style>
+    </style>
+  </head>
+  <body>
+    <template id="list-template">
+      <li class="recipe-title">List Content Here</li>
+    </template>
+    <div>
+      <form method="post" action="">
+        <label for="">Recipe Name</label>
+        <label for="">Recipe Catergory</label>
+        <label for="">Instructions </label>
+        <label for="">Ingredients</label>
+        <label for="">Servings</label>
+      </form>
+    </div>
+    <div>
+      <h2>Project 2 - API Testing List</h2>
+      <ul id="list-result">
+      </ul>
+    </div>
+  </body>
+  <script>
+    // const dummyData = [
+    //   {title: 'Heafy Leafy Salad'},
+    //   {title: 'Chicken Parmi'},
+    //   {title: 'Slow Roast Lamb'},
+    //   {title: 'Soup with Lentils Beans'},
+    //   {title: 'Surf and Turf'},
+    //   {title: 'Salmon and Prawns with Asparagrus'},
+    // ]
+
+    const dummyData = fetch('/zestyrecipes/v1/recipes?limit=2')
+        .then((res) => res.json())
+        .then((data) => {
+            data.forEach(item => addCard(item.catergory));
+        })
+
+    function addCard(recipeTitle) {
+        const templateOne =
+        document.getElementById("list-template").content.cloneNode(true);
+        
+        templateOne.querySelector('.recipe-title').innerText = recipeTitle;
+
+        document.querySelector('#list-result').appendChild(templateOne);
+        console.log('Successfully Added Content!');
+    }
+
+    // dummyData.forEach((item) => addCard(item.title));
+
+    function onSubmit() {
+      event.preventDefault();
+    }
+
+  </script>
+</html>

@@ -1,0 +1,78 @@
+[
+    {
+        "userid": 1,
+        "username": "Timothy Branco",
+        "email": "timothy.branco@yummyfoodies.com",
+        "password": "404=NotFound",
+        "accountid": 300257,
+        "accountPublic": true,
+        "posts": 
+        [
+            {"customrecipes": 
+                [
+                    {
+                        "tagId": "CR-23300257",
+                        "title": "Salmon and Prawns with Asparagrus",
+                        "catergory": "",
+                        "dateCreated": "24/07/24 11:23 AM",
+                        "ingredients": "",
+                        "servings": "",
+                        "instructions": ""
+                    }
+                ]
+            
+            },
+            {"modifedrecipes": 
+                [
+                    {
+                        "tagId": "MR-23300257",
+                        "title": "Salmon and Prawns with Asparagrus",
+                        "catergory": "",
+                        "dateCreated": "24/07/24 11:23 AM",
+                        "ingredients": "",
+                        "servings": "",
+                        "instructions": ""
+                    }
+                ]
+            
+            },
+            {"blogs": 
+                [
+                    {
+                        "tagId": "BP-23300257",
+                        "title": "Salmon and Prawns with Asparagrus",
+                        "dateCreated": "24/07/24 11:23 AM",
+                        "likes": "",
+                        "shares": "",
+                        "content": ""
+                    }
+                ]
+            
+            }
+        ]
+    },
+    {
+        "userid": 2,
+        "username": "Christoph Pickett",
+        "email": "christoph.pickett@yummyfoodies.com",
+        "password": "Star-Wars-Fan2000",
+        "accountid": 290387, 
+        "accountPublic": true
+    },
+    {
+        "userid": 3,
+        "username": "Josphef McCleery",
+        "email": "christoph.mccleery@yummyfoodies.com",
+        "password": "gamesandmoregamesXx209",
+        "accountid": 329947,
+        "accountPublic": true
+    },
+    {
+        "userid": 4,
+        "username": "Jimmy Talbot",
+        "email": "jimmy.talbot@yummyfoodies.com",
+        "password": "Football_Leagues34",
+        "accountid": 408257,
+        "accountPublic": false
+    }
+]
