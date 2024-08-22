@@ -1,0 +1,242 @@
+/* NOTE Globals */
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+}
+
+#filter-style {
+  filter: invert(100%) sepia(69%) saturate(158%) hue-rotate(271deg) brightness(115%) contrast(100%);
+}
+
+/* NOTE Fonts */
+
+.outfit-regular-20 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  font-style: normal;
+  /* text-transform: uppercase; */
+}
+
+.bayon-regular {
+  font-family: "Bayon", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+}
+
+.bayon-regular-30 {
+  font-family: "Bayon", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+
+.bayon-regular-36 {
+  font-family: "Bayon", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36px;
+}
+
+
+h2.bayon-regular {
+  font-family: "Bayon", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+
+/* NOTE Navbar Styles */
+
+#nav-link-zrb-s {
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.App .navbar-expand-xl .navbar-nav .nav-link-zrb:hover {
+  color: #fffedd;
+}
+
+.App .navbar-expand-xl .navbar-nav .nav-link-zrb:focus {
+  color: #fffedd;
+}
+
+.App .navbar-expand-xl .navbar-nav .nav-link-zrb {
+  color: #ffffff;
+}
+
+.App .nav-link-zrb-2:hover {
+  color: #d43941;
+}
+
+.App .nav-link-zrb-2 {
+  background-color: #ffffff;
+  color: #000000;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 180px;
+}
+
+.img-food {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.image-grid {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 300px 300px 300px 300px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.border-box {
+  box-sizing: border-box;
+}
+
+/* NOTE Food Recipe Gallery */
+
+.gallery-wrapper {
+  width: 1600px;
+  padding: 20px;
+  /* border: 4px solid red; */
+  background-color: #8837d8;
+  /* overflow-x: scroll;  */
+  margin: auto;
+}
+
+.content-body-wrapper {
+  width: 1600px;
+  padding: 40px;
+  height: 100vh;
+  margin: auto;
+  text-align: center;
+}
+
+.content-body-wrapper-contact {
+  width: 1600px;
+  padding: 40px;
+  height: 100vh;
+  margin: auto;
+}
+
+.content-body-wrapper-fall {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: center; */
+  width: auto;
+  min-width: 1600px;
+  padding: 40px;
+  height: 100vh;
+  margin: auto;
+  margin-top: 60px;
+  /* background-color: aliceblue; */
+}
+
+.content-body-wrapper-noct {
+  width: 1600px;
+  padding: 40px;
+  height: 100vh;
+  margin: auto;
+}
+
+/* NEW Imported from Mini Project 1 - Contact Page */
+
+.content-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e7e7e7;
+  height: 100%;
+}
+
+.test-api {
+  background-color: #ffffff;
+  margin: 20px 0px 20px 0px;
+  width: 60%;
+  border: #70ad9b solid 2px;
+  padding: 20px;
+}
+
+.contacts-title {
+  padding: 20px 20px 20px 20px;
+}
+
+.contacts-input-long {
+  width: 100%;
+  border-color: unset; 
+  border-width: 0px; 
+  border-style: inset;
+  background-color: #a7ecd7;
+  padding: 10px 20px 10px 20px;
+  height: 160px;
+  text-align: start;
+} 
+
+.contacts-input {
+  width: 100%;
+  border-color: unset; 
+  border-width: 0px; 
+  border-style: inset;
+  background-color: #a7ecd7;
+  padding: 10px 20px 10px 20px;
+}
+
+::placeholder {
+  color: #649385;
+  opacity: 1; 
+}
+
+::-ms-input-placeholder { /* Edge 12-18 */
+  color: #70ad9b;
+}
+
+.btn-style-2 {
+  padding: 15px 25px 15px 25px;
+  background-color: #a7ecd7;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-style-2:hover {
+  padding: 15px 25px 15px 25px;
+  background-color: #131c19;
+  color: #a7ecd7;
+  transition: 400ms;
+  border: none;
+  cursor: pointer;
+}
+
+/* NOTE Footer Component Style */
+
+.footer-links {
+  color: black; 
+  text-decoration-style: none; 
+  text-decoration-line: none;
+}
+
+.App .footer-links-socials-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.App .socials-img-space {
+  margin-left: 10px;
+}
+
+/* .footer-guides {
+  border: red solid 2px;
+} */
