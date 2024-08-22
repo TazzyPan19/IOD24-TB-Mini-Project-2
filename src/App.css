@@ -11,7 +11,18 @@ img {
 }
 
 #filter-style {
-  filter: invert(100%) sepia(69%) saturate(158%) hue-rotate(271deg) brightness(115%) contrast(100%);
+  filter: 
+    invert(100%) sepia(69%) 
+    saturate(158%) hue-rotate(271deg) 
+    brightness(115%) contrast(100%);
+}
+
+.flex-1 {
+  display: flex;
+}
+
+.guidelines {
+  border: red solid 2px;
 }
 
 /* NOTE Fonts */
@@ -21,7 +32,13 @@ img {
   font-weight: 500;
   font-size: 20px;
   font-style: normal;
-  /* text-transform: uppercase; */
+}
+
+.outfit-regular-16 {
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
 }
 
 .bayon-regular {
@@ -45,12 +62,18 @@ img {
   font-size: 36px;
 }
 
-
 h2.bayon-regular {
   font-family: "Bayon", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 40px;
+}
+
+h1.bayon-regular {
+  font-family: "Bayon", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 60px;
 }
 
 /* NOTE Navbar Styles */
@@ -105,70 +128,107 @@ h2.bayon-regular {
   box-sizing: border-box;
 }
 
-/* NOTE Food Recipe Gallery */
+/* NOTE Welcome Page Styles */
 
 .gallery-wrapper {
   width: 1600px;
   padding: 20px;
-  /* border: 4px solid red; */
-  background-color: #8837d8;
-  /* overflow-x: scroll;  */
   margin: auto;
+}
+
+.search-recipe-image {
+  background-image: url("./assets/food-fiesta-backdrop.png");
+  background-repeat: repeat-x;
+  width: 100%;
+  height: 100%;
+}
+
+.App .btn-primary {
+  --bs-btn-bg: #ffffff;
+  --bs-btn-border-color: #dee2e6;
+  --bs-btn-color: #000000;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #d43941;
+  --bs-btn-hover-border-color: #ffffff;
 }
 
 .content-body-wrapper {
   width: 1600px;
-  padding: 40px;
   height: 100vh;
   margin: auto;
+  padding: 40px;
   text-align: center;
 }
 
-.content-body-wrapper-contact {
+.content-body-wrapper-credit {
   width: 1600px;
+  height: 100vh;
   padding: 40px;
+  margin: auto;
+}
+
+.content-body-wrapper-faq {
+  width: 1600px;
   height: 100vh;
   margin: auto;
+  padding: 40px;
+}
+
+.content-body-wrapper-login {
+  width: 1600px;
+  height: 100vh;
+  margin: auto;
+  padding: 40px;
+}
+
+.content-body-wrapper-loading {
+  width: 1600px;
+  height: 100vh;
+  margin: auto;
+  padding: 40px;
+}
+
+.content-body-wrapper-contact {
+  width: 100%;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 40px;
 }
 
 .content-body-wrapper-fall {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* justify-content: center; */
   width: auto;
   min-width: 1600px;
   padding: 40px;
   height: 100vh;
   margin: auto;
   margin-top: 60px;
-  /* background-color: aliceblue; */
 }
 
 .content-body-wrapper-noct {
   width: 1600px;
-  padding: 40px;
   height: 100vh;
   margin: auto;
+  padding: 40px;
 }
 
-/* NEW Imported from Mini Project 1 - Contact Page */
+/* NEW Contact Page Style */
 
 .content-body {
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: #e7e7e7;
-  height: 100%;
+  width: 1600px;
+  /* height: 100%; */
+  margin: auto;
+  background-color: #fffedd;
+  padding: 60px;
 }
 
-.test-api {
-  background-color: #ffffff;
-  margin: 20px 0px 20px 0px;
-  width: 60%;
-  border: #70ad9b solid 2px;
-  padding: 20px;
+.content-body-flex {
+  display: flex;
+  justify-content: center;
+  height: inherit;
 }
 
 .contacts-title {
@@ -177,34 +237,23 @@ h2.bayon-regular {
 
 .contacts-input-long {
   width: 100%;
+  height: 160px;
+  padding: 10px 20px 10px 20px;
+  text-align: start;
   border-color: unset; 
   border-width: 0px; 
   border-style: inset;
-  background-color: #a7ecd7;
-  padding: 10px 20px 10px 20px;
-  height: 160px;
-  text-align: start;
 } 
 
 .contacts-input {
   width: 100%;
+  padding: 10px 20px 10px 20px;
   border-color: unset; 
   border-width: 0px; 
   border-style: inset;
-  background-color: #a7ecd7;
-  padding: 10px 20px 10px 20px;
 }
 
-::placeholder {
-  color: #649385;
-  opacity: 1; 
-}
-
-::-ms-input-placeholder { /* Edge 12-18 */
-  color: #70ad9b;
-}
-
-.btn-style-2 {
+/* .btn-style-2 {
   padding: 15px 25px 15px 25px;
   background-color: #a7ecd7;
   border: none;
@@ -218,7 +267,24 @@ h2.bayon-regular {
   transition: 400ms;
   border: none;
   cursor: pointer;
+} */
+
+::placeholder {
+  color: #363636;
+  opacity: 1; 
 }
+
+::-ms-input-placeholder { /* Edge 12-18 */
+  color: #363636;
+}
+
+/* NOTE Account Component Style */
+
+/* NOTE FAQ Style */
+
+/* NOTE RecipeViewer Component Style */
+
+/* NOTE Login / Sign Up Form Component Style */
 
 /* NOTE Footer Component Style */
 
@@ -237,6 +303,50 @@ h2.bayon-regular {
   margin-left: 10px;
 }
 
-/* .footer-guides {
-  border: red solid 2px;
-} */
+.App .socials-sizing {
+  width:40px;
+  height:40px;
+}
+
+.App .fallback-link {
+  color: #000000;
+  text-decoration: none;
+}
+
+.App .fallback-link:hover {
+  color: #d43941;
+  text-decoration: none;
+  transition: 300ms;
+}
+
+/* NOTE CSS Overrides React Bootstrap  */
+
+.App .row-cols-3>* {
+  flex: 0 0 auto;
+  width: 30%;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.App .row>* {
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+/* NOTE Media Queries LG, MD, SM, XXS */
+
+@media only screen and (min-width: 1440px) {
+
+}
+
+@media only screen and (min-width: 780px) {
+
+}
+
+@media only screen and (max-width: 500px) {
+
+}
+
+@media only screen and (max-width: 360px) {
+
+}
