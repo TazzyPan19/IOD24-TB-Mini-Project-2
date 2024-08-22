@@ -8,10 +8,10 @@ export const Fallback = () => {
   
     // NOTE RETURNS
     return (
-        <div className="content-body-wrapper-fall" style={{color: "black"}}>
+        <div className="content-body-wrapper-fall">
             <h2 className="bayon-regular">{emoji} Error 404. Page Not Found!</h2>
              <div>
-                <p className="outfit-regular-20" ><a href="/" >Please use this link to redirect you to our home page.</a></p>
+                <p className="outfit-regular-20" ><a className="fallback-link" href="/" >Please use this link to redirect you to our home page.</a></p>
             </div>  
         </div>  
     )

@@ -14,7 +14,7 @@ const userReducer = (state, action) => {
 }
 
 const initialState = {
-    currentAccountUser: { firstName: "Timothy", lastName: "Branco", email: "unknownUser9999@zestyrecipes.com", password: "yolo2004" },
+    currentAccountUser: { firstName: "Guest", lastName: "User", email: "guestuser@zestyrecipes.com", password: "helloworld" },
     mode: "light",
 }
 
